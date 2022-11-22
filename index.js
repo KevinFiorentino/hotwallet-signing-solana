@@ -4,7 +4,7 @@ import { PublicKey } from '@solana/web3.js';
 import * as nacl from 'tweetnacl';
 const signer = nacl.sign || nacl.default.sign;
 
-// Prepare wallet
+// Preparing wallet
 const publicKey = new PublicKey('HeDnSsv9rykjKyGUv4GGXR7FgaRbViSftAh7JgcsAL3z');
 const secretKey = new Uint8Array([
   153, 109,  57, 143, 124,   3,   9, 248,  50, 103,  66,
@@ -15,13 +15,13 @@ const secretKey = new Uint8Array([
   154, 246, 223, 173,  74, 146, 114, 224,   1
 ]);
 
-// Sign message
+// Signing message
 const messageToSign = 'A random message to sign!';
 const signature = signer.detached(Buffer.from(messageToSign), secretKey);
 
 console.log('signature', signature);
 
-// Signature compatible with LitProtocol
+// Signature compatible with https://litprotocol.com/
 const hexSignature = uint8arrayToString(signature, 'base16');
 
 const authSig = {

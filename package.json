@@ -1,17 +1,14 @@
 {
   "name": "hotwallet-signing-solana",
   "version": "1.0.0",
-  "description": "",
+  "description": "Signing message in the backend to authenticate a Solana wallet, without Phantom.",
   "main": "index.js",
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
+  "scripts": {},
+  "author": "Kevin Fiorentino",
   "license": "ISC",
   "dependencies": {
     "@solana/web3.js": "^1.66.2",
-    "bs58": "^5.0.0",
     "tweetnacl": "^1.0.3",
     "uint8arrays": "^4.0.2"
   }
