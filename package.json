@@ -1,0 +1,18 @@
+{
+  "name": "hotwallet-signing-solana",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@solana/web3.js": "^1.66.2",
+    "bs58": "^5.0.0",
+    "tweetnacl": "^1.0.3",
+    "uint8arrays": "^4.0.2"
+  }
+}
