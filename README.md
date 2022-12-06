@@ -1,6 +1,6 @@
 ## Hotwallet Signing Solana
 
-Signing message in the backend to authenticate a Solana wallet, without Phantom.
+Signing message in the backend to authenticate a Solana User (without Phantom).
 
 #### Usage
 
