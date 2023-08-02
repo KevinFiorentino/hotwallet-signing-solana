@@ -1,5 +1,6 @@
 import { toString as uint8arrayToString } from 'uint8arrays';
 import { PublicKey } from '@solana/web3.js';
+import bs58 from 'bs58';
 
 import * as nacl from 'tweetnacl';
 const signer = nacl.sign || nacl.default.sign;
@@ -20,6 +21,7 @@ const messageToSign = 'A random message to sign!';
 const signature = signer.detached(Buffer.from(messageToSign), secretKey);
 
 console.log('signature', signature);
+console.log('signature', bs58.encode(signature));
 
 // Signature compatible with https://litprotocol.com/
 const hexSignature = uint8arrayToString(signature, 'base16');
